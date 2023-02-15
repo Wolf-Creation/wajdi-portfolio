@@ -1,0 +1,97 @@
+.cat1, .cat2, .cat3 {
+    position: relative;
+    background-color: #101010;
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 8px 4px rgba(0, 0, 0, 0.5), 0 0 4px rgba(224, 224, 224, 0.2);
+
+}
+
+.catalogue{
+    z-index: 99;
+    display: flex;
+    gap: 86px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 8%;
+}
+
+.image{
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.cat-description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.function{
+    margin: 0;
+    font-size: 16px;
+    color: #999999;
+    letter-spacing: 2px;
+}
+
+.speciality{
+    margin: 10px;
+    font-size: 20px;
+    color: #DDBA00;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.what-I-do{
+    position: relative;
+}
+
+.about-description{
+    font-weight: 100;
+}
+
+.cadre1{
+    position: absolute;
+    top: 6%;
+    left: -10%;
+    z-index: -99;
+    opacity: 0.3;
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    border: 0.1px solid white;
+}
+.cadre2{
+    position: absolute;
+    top: 14%;
+    left: -20%;
+    z-index: -99;
+    opacity: 0.3;
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    border: 0.1px solid white;
+}
+.cadre3{
+    position: absolute;
+    top: -6%;
+    left: 10%;
+    z-index: -99;
+    opacity: 0.3;
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    border: 0.1px solid white;
+}
+
+@media screen and (max-width:600px) {
+
+}

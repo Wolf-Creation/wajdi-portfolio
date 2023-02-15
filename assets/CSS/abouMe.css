@@ -1,0 +1,72 @@
+
+.about-container {
+    display: flex;
+    gap: 100px;
+    margin: 0 8%;
+    justify-content: center;
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    letter-spacing: 1px;
+    flex: 1;
+    padding-top: 40px;
+    color: rgb(186, 186, 186);
+}
+
+
+.profil-name{
+    font-size: 30px;
+    font-weight: bold !important;
+    margin-bottom: 10px;
+    color: #DDBA00;
+}
+
+.profil-description{
+    padding-bottom: 60px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.profil-competence{
+    line-height: 30px;
+    text-align: justify;
+}
+
+.compt1, .compt2, .compt3{
+    padding-bottom: 12px;
+}
+
+.about-image{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+    flex: 1;
+}
+
+.img-about img{
+    width: 500px;
+}
+
+@media screen and (max-width:1200px) {
+    .about-container{
+        flex-direction: column !important;
+    }
+    .title2{
+        text-align: center;
+        margin-right: 0;
+    }
+    .about-description, .profil-description, .profil-competence, .compt1, .compt2, .compt3{
+        text-align: center;
+    }
+    .profil-description{
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:600px){
+    
+}

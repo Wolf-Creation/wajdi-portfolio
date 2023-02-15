@@ -1,0 +1,29 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.pagination > a >button{
+    border: 0.1px solid #6f5d01;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 2.6;
+    background-color: unset;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+a >.active{
+    background-color: #DDBA00 !important;
+    color: #1d1d1d !important;
+    font-weight: bold;
+}
