@@ -5,6 +5,9 @@ window.onload = () => {
     displayProjects()
     setActive(1)
     playVideo()
+    if (window.innerWidth < 1080) {
+        document.querySelector('.slider-video').src = "/assets/img/slider/slider_mobile_x264.mp4"
+    }
 }
 
 window.onresize = function () {

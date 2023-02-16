@@ -186,45 +186,37 @@ a {
     footer{
         font-size: 12px;
     }
-
-    .about-description, .profil-description, .profil-competence, .compt1, .compt2, .compt3{
-        font-size: 16px;
-    }
 }
 
 @media screen and (max-width:697px) {
     .cadre1{
-        position: absolute;
-        top: 15%;
-        left: -14%;
-        z-index: -99;
-        opacity: 0.3;
-        width: 320px;
-        height: 220px;
-        border-radius: 15px;
-        border: 0.1px solid white;
+        display: none;
     }
     .cadre3{
-        position: absolute;
-        top: 15%;
-        left: -14%;
-        z-index: -99;
-        opacity: 0.3;
-        width: 320px;
-        height: 220px;
-        border-radius: 15px;
-        border: 0.1px solid white;
+        display: none;
     }
     .cadre2{
-        position: absolute;
-        top: 15%;
-        left: -14%;
-        z-index: -99;
-        opacity: 0.3;
-        width: 320px;
-        height: 220px;
-        border-radius: 15px;
-        border: 0.1px solid white;
+        display: none;
+    }
+
+    .cat1, .cat2, .cat3 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .image{
+        flex: 1.5;
+    }
+    .image > img{
+        height: 120px ;
+    }
+
+    .function{
+        font-size: 20px;
+    }
+    .speciality{
+        font-size: 24px;
+        margin: 0;
     }
     
     ul{
@@ -264,8 +256,8 @@ a {
         width: 30px;
     }
 
-    .slider-video{
-        width: 120%;
+    .about-description, .profil-description, .profil-competence, .compt1, .compt2, .compt3{
+        font-size: 15px;
     }
 }
 
@@ -288,4 +280,5 @@ a {
     .top-header{
         padding: 5px 1vw;
     }
+
 }
