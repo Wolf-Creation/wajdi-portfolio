@@ -75,6 +75,11 @@ a {
     .top-header-right ul li{
         font-size: 14px;
     }
+
+    .title2{
+        padding-top: 40px !important;
+    }
+    
     .title, .title2, .title3, .title4, .title5{
         font-size: 35px !important;
         text-align: center !important;
@@ -82,6 +87,7 @@ a {
         font-weight: 700;
         padding-bottom: 30px !important;
     }
+    
     .catalogue{
         padding-top: 0;
     }
@@ -186,6 +192,7 @@ a {
     footer{
         font-size: 12px;
     }
+    
 }
 
 @media screen and (max-width:697px) {
