@@ -4,7 +4,7 @@ let currentPage = 1
 var pagination = document.querySelector('.pagination')
 var projects_works = document.querySelector('#projects_works');
 const categories = document.querySelectorAll('.cat');
-const projects = document.querySelectorAll('.projects');
+
 let selectedCategory = 'all'
 let cat_projects = []
 let ProjectPerCategory = []
@@ -23,7 +23,7 @@ function displayProjects(category) {
     //create project items
     paginatedProject.forEach(function (project) {
         var projectHTML = `
-            <div class="projects">
+            <div class="projects" id="projects">
                 <div class="project-container">
                 <div class="project-details">
                         <div class="project-name">${project.projectName}</div>
@@ -59,6 +59,7 @@ function displayProjects(category) {
     });
     updatePaginationButtons(totalPages)
     var video = document.getElementById("video");
+    var projects = document.getElementById("projects");
     playVideo()
     index = 0
     cat_projects = []
@@ -224,17 +225,39 @@ categories.forEach(category => {
 //read automatically video preview
 function playVideo() {
     var playIcon = document.querySelectorAll('.play-icon')
-    for (let index = 0; index < video.length; index++) {
-        video[index].addEventListener("mouseover", function () {
-            video[index].play();
-            video[index].style.filter = 'blur(0)';
+    if (window.innerWidth > 697) {
+        for (let index = 0; index < video.length; index++) {
+            video[index].addEventListener("mouseover", function () {
+                video[index].play();
+                video[index].style.filter = 'blur(0)';
+                playIcon[index].style.display = "none"
+            });
+            video[index].addEventListener("mouseout", function () {
+                video[index].pause();
+                video[index].style.filter = 'blur(1px)';
+                playIcon[index].style.display = "block"
+            });
+        }
+    }
+    else {
+        for (let index = 0; index < video.length; index++) {
             playIcon[index].style.display = "none"
-        });
-        video[index].addEventListener("mouseout", function () {
-            video[index].pause();
-            video[index].style.filter = 'blur(1px)';
-            playIcon[index].style.display = "block"
-        });
+        }
     }
 }
 
+function autoPlayMobileVideo() {
+
+    // Itération sur toutes les vidéos pour détecter si elles sont visibles
+    for (var i = 0; i < video.length; i++) {
+        var videoElement = video[i];
+        var videoRect = videoElement.getBoundingClientRect();
+
+        // Si la vidéo est visible sur la page, on la lance
+        if (videoRect.top < window.innerHeight && videoRect.bottom >= 0) {
+            videoElement.play();
+        } else {
+            videoElement.pause();
+        }
+    }
+}
