@@ -1,0 +1,71 @@
+.showcase{
+    background-color: #211B19;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.showcase-title{
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 80px;
+}
+
+.project-title{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.showcase-filter{
+    font-size: 1.5rem;
+    width: 500px
+}
+
+.project{
+    padding-bottom: 50px !important;
+}
+
+.b{
+    color: white;
+    opacity: 28%;
+}
+
+.project-preview:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.project-title:hover{
+    opacity: 50%;
+    scale: 1.2;
+    cursor: pointer;
+}
+
+#gallery-popup .modal-image{
+    width: 100%;
+}
+
+.album{
+    display: none;
+}
+
+@media screen and  ( max-width:1400px) {
+    .showcase-title{
+        /* font-size: 60px; */
+        text-align: center;
+        line-height: 60px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .showcase-title{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .project-preview > img{
+        width: 350px;
+    }
+}

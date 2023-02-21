@@ -1,27 +1,26 @@
-var nav = document.querySelector('.top-header-right> nav')
-var openMenu = document.querySelector('.bar-menu>.open')
-var closeMenu = document.querySelector('.bar-menu>.close')
-var barMenu = document.querySelector('.bar-menu')
-var prevBtn = document.querySelector(".prevBtn");
-var nextBtn = document.querySelector(".nextBtn");
-
+var nav = document.querySelector('.main')
+var menuNav = document.querySelector('.menu-button')
+var menuClose = document.querySelector('.close-button')
 
 var listenerFunctions = {
-    navOpen: () => {
-        openMenu.style.display = 'none'
-        closeMenu.style.display = 'block'
+    openNav: ()=> {
+        menuNav.style.display = 'none'
+        menuClose.style.display ='block'
         nav.style.display = 'block'
+        
     },
-    navClose: () => {
-        openMenu.style.display = 'block'
-        closeMenu.style.display = 'none'
+
+    closeNav: ()=> {
+        menuNav.style.display = 'block'
+        menuClose.style.display = 'none'
         nav.style.display = 'none'
     }
 }
 
-var setuplisteners = () => {
-
-    openMenu.onclick = listenerFunctions.navOpen
-    closeMenu.onclick = listenerFunctions.navClose
-
+var setuplisteners =()=>{
+    menuNav.onclick = listenerFunctions.openNav
+    menuClose.onclick = listenerFunctions.closeNav
 }
+
+
+

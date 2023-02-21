@@ -1,0 +1,157 @@
+.career {
+    background-color: #211B19;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.career-block {
+    background-color: #282828;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.career-logo {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    color: #282828;
+    border-radius: 80px;
+}
+
+.career-logo img{
+    width: 55px;
+}
+
+
+.career-title {
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 80px;
+}
+
+.career-date{
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 0px;
+}
+
+.career-post{
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.career-state{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color:  #288BC2;
+
+}
+
+.career-box{
+    height: auto ;
+    padding-bottom: 80px;
+}
+
+.career-block:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgba(236, 236, 236, 0.438);
+}
+
+/* responsive */
+@media screen and (max-width: 1400px) {
+    .career-title{
+        text-align: center;
+        /* font-size: 60px; */
+    }
+    .career-description{
+        flex-direction: column;
+    }
+    .career-date{
+        text-align: end;
+    }
+    .career-description{
+        order: 2;
+    }
+    .career-logo{
+        order: 1;
+    }
+    .career-post{
+        padding-bottom: 6px;
+    }
+    .career-date {
+        padding-bottom: 6px;
+    }
+    .career-block{
+        height: 180px;
+    }
+    .career-logo {
+        width: 130px;
+        height: 130px;
+        border-radius: 80px;
+    }
+    .career-logo img{
+        width: 95px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .career-date{
+        font-size: 20px;
+        padding-bottom: 6px;
+    }
+    .career-post{
+        font-size: 20px;
+        padding-bottom: 6px;
+    }
+    .career-state{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    .career-logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 80px;
+        
+    }
+    .career-logo img{
+        width: 75px;
+    }
+    .career-block{
+        height: 140px;
+    }
+    .career-title{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .career-logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 80px;
+    }
+    .career-logo img{
+        width: 45px;
+    }
+    .career-date{
+        font-size: 16px;
+        padding-bottom: 6px;
+    }
+    .career-post{
+        font-size: 16px;
+        padding-bottom: 6px;
+    }
+    .career-state{
+        font-size: 14px;
+        font-weight: 100;
+    }
+    .career-block{
+        padding-inline: 28px;
+    }
+    header{
+        padding-inline: 20px;
+    }
+}

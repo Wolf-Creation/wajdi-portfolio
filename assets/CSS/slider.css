@@ -1,0 +1,203 @@
+header {
+    background-color: #211B19;
+    color: white;
+    height: 100vh;
+}
+
+.logo-icon video {
+    height: 140px;
+    width: 140px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, 0%);
+}
+
+.text {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.bar{
+    z-index: 100;
+}
+
+.menu img:hover {
+    cursor: pointer;
+}
+
+.talk{
+    z-index: 100;
+}
+
+.talk img {
+    height: 70px;
+}
+
+
+.profil-name {
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.profil-post {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.profil-competence {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 100;
+    color: rgb(172, 172, 172);
+}
+
+.slider-content {
+    height: calc(100vh - 135px);
+    z-index: 5;
+}
+
+.ellipse-right img {
+    height: 100vh;
+    right: 0%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 0;
+}
+
+.ellipse-left img {
+    height: 100vh;
+    left: 0%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 0;
+}
+
+.talk a {
+    text-decoration: none;
+    color: white;
+}
+
+.talk a:hover {
+    color: white;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1400px) {
+    .ellipse-left>img {
+        height: 100vh;
+        left: 0%;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 500px;
+    }
+    .ellipse-right img {
+        height: 100vh;
+        right: 0%;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 500px;
+    }
+    .talk{
+        flex-grow: 1;
+    }
+    .talk> .text{
+        display: none;
+    }
+    .logo-icon video{
+        top: 15%;
+        left: 50%;
+        width: 30vh;
+        height: 30vh;
+        z-index: 5;
+    }
+    header{
+        height: 100vh;
+    }
+    .slider-content{
+        padding-top: 35vh;
+    }
+    .profil-name {
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    
+    .profil-post {
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 300;
+    }
+    
+    .profil-competence {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 100;
+        color: rgb(172, 172, 172);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .logo-icon video{
+        top: 25%;
+        left: 50%;
+        width: 30vh;
+        height:30vh;
+        z-index: 5;
+    }
+    .profil-name {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    
+    .profil-post {
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 200;
+        padding-bottom: 4px;
+    }
+    
+    .profil-competence {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 100;
+        color: rgb(172, 172, 172);
+        text-align: center;
+    }
+    .menu > img{
+        width: 40px;
+    }
+}
+@media screen and (max-width:576px) {
+    .ellipse-left>img {
+        width: 300px;
+    }
+    .ellipse-right img {
+        width: 300px;
+    }
+    .logo-icon video{
+        top: 30%;
+        left: 50%;
+        width: 25vh;
+        height: 25vh;
+        z-index: 5;
+    }
+    .talk >img{
+        width: 50px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .logo-icon > video{
+        width: 20vh;
+        height: 20vh;
+    }
+}
