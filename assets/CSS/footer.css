@@ -42,5 +42,10 @@ footer {
     #scroll-top-btn{
         background-color: unset;
     }
+
+    #scroll-top-btn >img{
+        display: none;
+    }
+
     
 }
