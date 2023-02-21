@@ -2,7 +2,7 @@ window.onload = () => {
     displayProjects(project_table)
     setActive(1)
     if (window.innerWidth < 1080) {
-        document.querySelector('.slider-video').src = "/assets/img/slider/slider_mobile_x264.mp4"
+        document.querySelector('.slider-video').src = "/assets/img/slider/slider_mobile2_x264.mp4"
     }
     // Appel de la fonction lors du scroll sur mobile
     window.addEventListener('scroll', function () {
