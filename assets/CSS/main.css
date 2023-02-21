@@ -1,65 +1,11 @@
-@import url("/assets/css/slider.css");
-@import url("/assets/css/about_me.css");
-@import url("/assets/css/framework.css");
-@import url("/assets/css/career.css");
-@import url("/assets/css/showcase.css");
-@import url("/assets/css/footer.css");
-@import url("/assets/css/menu.css");
-@import url("/assets/css/modal.css");
-@import url("/assets/css/pagination.css");
-@import url("/assets/css/contact.css");
 
-
-html{
-    scroll-behavior: smooth;
-    background-color: #211B19;
-}
-
-@font-face {
-    font-family: "Quicksand";
-    src: url('/assets/font/Quicksand_2/Quicksand-VariableFont_wght.ttf');
-    src: url('/assets/font/Quicksand_2/Quicksand-VariableFont_wght.ttf') format('truetype');
-    font-weight: lighter;
-    font-weight: medium;
-    font-weight: bold;
-    font-weight: bolder;
-    font-style: normal;
-}
-@font-face {
-    font-family: "PermanentMarker";
-    src: url('/assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf');
-    src: url('/assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf') format('truetype');
-    font-weight: lighter;
-    font-weight: medium;
-    font-weight: bold;
-    font-weight: bolder;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Rubik";
-    src: url('/assets/fonts/Rubik/static/Rubik-Light.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Rubik";
-    src: url('/assets/fonts/Rubik/static/Rubik-Medium.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Rubik";
-    src: url('/assets/fonts/Rubik/static/Rubik-Bold.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Rubik";
-    src: url('/assets/fonts/Rubik/static/Rubik-ExtraBold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-} 
-
-body{
-    font-family: Rubik !important;
-}
+@import url("/assets/CSS/framework.css");
+@import url("/assets//CSS/style.css");
+@import url("/assets/CSS/project_blog.css");
+@import url("/assets/CSS/pagination.css");
+@import url("/assets/CSS/WhatIDO.css");
+@import url("/assets/CSS/abouMe.css");
+@import url("/assets/CSS/skills.css");
+@import url("/assets/CSS/talk.css");
+@import url("/assets/CSS/footer.css");
+@import url("/assets//CSS/header.css");

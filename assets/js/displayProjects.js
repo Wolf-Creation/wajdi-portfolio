@@ -31,7 +31,7 @@ function displayProjects(category) {
                         ${project.projectDescription}
                         </div>
                     </div>
-                    <div class="project-botton flex gap-5">
+                    <div class="project-botton flex gap-1">
                         <a href='${project.link}' target='blank' class="view">View</a>
                         <span class='tools'>${project.tools.tool1}</span>
                         <span class='tools'>${project.tools.tool2}</span>
@@ -39,7 +39,7 @@ function displayProjects(category) {
                         <span class='tools'>${project.tools.tool4}</span>
                     </div>
                     <div class="project-preview">
-                        <video id='video' src="${project.video}" width="105%" loop muted poster="${project.image}"> </video>
+                        <video id='video' src="${project.video}" width="100%" loop muted poster="${project.image}"> </video>
                         <img class='play-icon' src="/assets/img/icon/play.png" alt="">
                     </div>
                 </div>   
@@ -74,7 +74,7 @@ function createPagination(index, table) {
     // Create Previous button
     let hRef = document.createElement('a')
     let previous = document.createElement("button")
-    hRef.href = '#projects'
+    hRef.href = '#project'
     previous.classList.add('prevBtn')
     pagination.appendChild(hRef)
     hRef.appendChild(previous)
@@ -84,7 +84,7 @@ function createPagination(index, table) {
     for (let i = 1; i <= index; i++) {
         let hRef = document.createElement('a')
         let button = document.createElement("button");
-        hRef.href = '#projects'
+        hRef.href = '#project'
         button.classList.add('page');
         button.innerHTML = i;
         pagination.appendChild(hRef);
@@ -101,18 +101,11 @@ function createPagination(index, table) {
     // Create Next button
     let hRef2 = document.createElement('a')
     let next = document.createElement("button")
-    hRef2.href = '#projects'
+    hRef2.href = '#project'
     next.classList.add('nextBtn')
     pagination.appendChild(hRef2)
     hRef2.appendChild(next)
     next.innerHTML = '&raquo;'
-
-    var screen_width = window.innerWidth
-    /* if (screen_width < 868) {
-        hidePagination()
-    } else {
-        showPagination()
-    } */
 
     next.addEventListener('click', function () {
         currentPage++
@@ -261,3 +254,4 @@ function autoPlayMobileVideo() {
         }
     }
 }
+

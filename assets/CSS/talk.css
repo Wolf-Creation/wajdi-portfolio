@@ -10,29 +10,40 @@
     display: flex;
     background-color: #DDBA00;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: 600;
     align-items: center;
-    margin: 35px;
     padding: 0 20px;
     border-radius: 30px;
     color: black;
+    cursor: pointer;
 }
 
 .mail{
     display: flex;
-    flex-direction: column;
+    background-color: #DDBA00;
+    font-size: 20px;
+    font-weight: 600;
     align-items: center;
-    height: 120px;
-    gap: 5px;
-    font-size: 14px;
-    color: #DDBA00;
+    padding: 6px 20px;
+    border-radius: 30px;
+    color: black;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.mail-icon> img{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .whats-icon{
     display: flex;
     width: 40px;
     align-items: center;
-    height: 40px;
+    justify-content: center;
+    /* height: 40px; */
 }
 
 E-mail{
@@ -55,6 +66,43 @@ E-mail{
 
 #top:hover{
     cursor: pointer;
+}
+
+.modal-content{
+    background-color: #DDBA00;
+}
+
+.form-control{
+    background-color: #222222 !important;
+    color: white !important;
+    font-weight: 300 !important;
+}
+
+.modal-header> h1{
+    color: rgb(0, 0, 0);
+}
+
+label{
+    color: rgb(0, 0, 0);
+}
+
+.btn-primary{
+    color: #ffffff;
+}
+.btn-primary:hover{
+    background-color:#0336c2 ;
+}
+
+.btn-secondary:hover{
+    background-color: #222222;
+}
+.btn-secondary{
+    background-color: #222222;
+}
+
+textarea{
+    background-color: #222222 !important;
+    color: white !important;
 }
 
 @media screen and (max-width:600px) {

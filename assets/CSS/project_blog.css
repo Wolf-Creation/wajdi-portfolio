@@ -38,7 +38,7 @@
 
 .projects {
     width: 296px;
-    height: 390px;
+    height: 416px;
     background-color: #101010;
     padding: 30px 20px;
     border-radius: 25px;
@@ -63,7 +63,7 @@
 }
 
 .project-details {
-    height: 125px;
+    height: 128px;
     overflow: hidden;
     padding-bottom: 5px;
 }
@@ -86,8 +86,8 @@
     color: rgb(196, 196, 196);
     font-size: 11px;
     font-weight: 100;
-    padding: 7.5px 14px;
-    border-radius: 10px;
+    padding: 5px 10px;
+    border-radius: 9px;
     background-color: #0042f9;
 }
 
@@ -95,12 +95,19 @@
     margin-top: 12px;
     background-color: #101010;
     border-radius: 10px;
-    height: 228px;
+    /* height: 228px; */
     width: 100%;
     display: flex;
     overflow: hidden;
     cursor: pointer;
     position: relative;
+    display: flex;
+}
+
+.project-preview> #video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-preview img {
