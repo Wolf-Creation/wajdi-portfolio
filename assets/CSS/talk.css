@@ -84,8 +84,10 @@ input, textarea{
     outline: none;
     background: transparent;
     border: 0;
-    border-bottom: 2px solid #151515;
+    border-bottom: 1px solid #15151581;
     border-right: 1px solid #15151560;
+    border-radius: 8px;
+    padding-left: 4px;
 }
 
 #email-field{
@@ -97,7 +99,7 @@ input, textarea{
     display: block;
     position: absolute;
     top: 0px;
-    left: 2px;
+    left: 4px;
     transition: top 0.3s;
 }
 
@@ -109,13 +111,15 @@ input, textarea{
     display: block;
     position: absolute;
     bottom: 5px;
-    left: 2px;
+    left: 4px;
     transition: bottom 0.3s;
 }
 
 .modal-content> button{
     width: 170px;
+    color: #000000;
 }
+
 
 @media screen and (max-width:600px) {
     .title5{
@@ -135,5 +139,55 @@ input, textarea{
     }
     E-mail{
         font-size: 16px;
+    }
+
+    .modal-content{
+        width: 100%;
+        padding: 50px 10px 20px;
+    }
+    input, textarea{
+        border-right: 0;
+    }
+
+    .modal-content> button{
+        width: 140px;
+    }
+
+    .btn-primary{
+        font-size: 14px;
+    }
+    #email-field{
+        font-size: 14px;
+    }
+    label{
+        font-size: 14px;
+    }
+    .modal-close{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        background-color: #252525;
+        border-radius: 20px;
+        width: 25px !important;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: unset;
+        color: #DDBA00 !important;
+    }
+    .close-button{
+        display: none;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .modal-close{
+        display: none;
+    }
+    .close-button{
+        display: block;
+        background-color: #252525 !important;
     }
 }

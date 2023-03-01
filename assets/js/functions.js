@@ -1,14 +1,4 @@
 
-function hidePagination() {
-    // Add hide class to the pagination div
-    pagination.classList.add('hide')
-}
-
-function showPagination() {
-    // remove hide class from the pagination div
-    pagination.classList.remove('hide')
-}
-
 // insert hidden class to bar menu icon
 function insertHidden() {
     if (window.innerWidth > 697) {
