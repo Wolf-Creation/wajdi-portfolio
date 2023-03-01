@@ -174,59 +174,75 @@
             </div>
             <div class="contact">
                 <div class="whatsapp">
-                    <div class="whats-icon">
-                        <img src="/assets/img/icon/whatsapp 1.png" alt="">
-                    </div class="whatsapp-text">
-                    Whatsapp
+                    <img src="/assets/img/icon/whatsapp 1.png" alt="">
+                    <div class="whatsapptext">Whatsapp</div>
                 </div>
-                <div type="button" class="mail" data-bs-toggle="modal"
+                <div type="button" class="mail-icon" data-bs-toggle="modal"
                     data-bs-target="#exampleModal" data-bs-whatever="@">
-                    <div class="mail-icon ">
-                        <img src="/assets/img/icon/Group 32 (1).png" alt="">
-                    </div>
-                    E-mail
+                    <img src="/assets/img/icon/Group 32 (1).png"  alt="">
+                    <div class="Email-text"> E-mail</div>
                 </div>
                 <div class="modal fade" id="exampleModal" tabindex="-1"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5"
-                                    id="exampleModalLabel">New message</h1>
-                                <button type="button" class="btn-close"
-                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="modal-content d-flex flex-column"
+                            action="https://formspree.io/f/xyyajzgk"
+                            method="POST" target="_blank"
+                            onsubmit="resetMail();">
+                            <div id="name-group" class="position-relative">
+                                <label id="title-label" class="name">Full
+                                    name:</label>
+                                <input type="text" name="name"
+                                    id="email-field"
+                                    class="position-relative"
+                                    onkeyup="labelAnimation(document.querySelector('.name'))">
                             </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="recipient-name"
-                                            class="col-form-label">Your Adress E-Mail</label>
-                                        <input type="email" class="form-control"
-                                            id="recipient-name">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="message-text"
-                                            class="col-form-label">Your Message</label>
-                                        <textarea class="form-control"
-                                            id="message-text"></textarea>
-                                    </div>
-                                </form>
+                            <div id="email-group" class="position-relative">
+                                <label id="title-label" class="email">Your
+                                    email:</label>
+                                <input type="email" name="email"
+                                    id="email-field"
+                                    class="position-relative"
+                                    onkeyup="labelAnimation(document.querySelector('.email'))">
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Send
-                                    message</button>
+                            <div id="message-group"
+                                class="position-relative">
+                                <label id="message-label" class="message">Your
+                                    message:</label>
+                                <textarea name="message" rows="7"
+                                    id="message-field"
+                                    class="position-relative"
+                                    onkeyup="messageAnimation()"></textarea>
                             </div>
-                        </div>
+
+                            <!-- your other form fields go here -->
+                            <button type="submit" class="btn btn-primary
+                                ms-auto">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
 
+        <script>
+            function resetMail() {
+                setInterval(() => {
+                    var emailField = document.querySelectorAll('#email-field')
+                    var messageField = document.querySelector('#message-field')
+
+                    for (let index = 0; index < emailField.length; index++) {
+                        emailField[index].value =''
+                    }
+                    messageField.value =''
+                }, 3000);
+            }
+        </script>
         <!-- Scroll to the top button -->
         <div id="scroll-top-btn"><img
-                src="/assets/img/icon/corner-right-up.png" alt=""></div>
+                src="/assets/img/icon/corner-right-up.png"
+                alt=""></div>
+
+        <!-- footer -->
         <footer>
             Copyright © Chebaane Wajdi · 2022
             <div class="icon-footer">
@@ -252,6 +268,6 @@
         <script src="/assets/js/bootstrap/bootstrap.js"></script>
         <script src="/assets/js/bootstrap/jquery-3.6.2.min.js"></script>
         <script src="/assets/js/bootstrap/popper.min.js"></script>
-
+        <script src="/assets/js/sendMail.js"></script>
     </body>
 </html>
