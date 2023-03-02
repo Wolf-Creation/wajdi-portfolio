@@ -148,7 +148,10 @@ input, textarea{
     .modal-content{
         width: 100%;
         padding: 50px 10px 20px;
+        margin-top: 15%;
     }
+
+
     input, textarea{
         border-right: 0;
     }
