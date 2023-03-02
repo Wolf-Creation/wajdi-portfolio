@@ -28,4 +28,11 @@ scrollTop.addEventListener("click", function () {
 });
 
 
+//open Whatsapp discussion
+function openWhatsApp(phoneNumber) {
+    var url = "https://wa.me/" + phoneNumber;
+    window.open(url);
+}
+  
+
 
