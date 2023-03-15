@@ -165,7 +165,7 @@ var project_table = [
 var private_table = [
     {
         projectName: "Dr Hichem Jarraya",
-        projectDescription: "The website of a digestive surgeon is designed to provide detailed information about the services and treatments offered by the surgeon.",
+        projectDescription: "A website of a digestive surgeon that is designed to provide detailed information about the services and treatments offered by the surgeon Dr Hichem Jarraya.",
         tools: {
             tool1: "Figma"
         },
@@ -176,7 +176,7 @@ var private_table = [
     },
     {
         projectName: "Fritti",
-        projectDescription: "the goal of a web application for ordering frit from a restaurant would be to provide a convenient and easy-to-use platform for users to place their orders.",
+        projectDescription: "Fritti is a web application for ordering frit from a restaurant. Its goal is to provide a convenient and easy-to-use platform for users to place their orders.",
         tools: {
             tool1: "Figma"
         },
@@ -187,7 +187,7 @@ var private_table = [
     },
     {
         projectName: "Helpdesk",
-        projectDescription: "The main purpose of the application was to provide an easy-to-use interface for employers to submit technical support requests and receive assistance from ARVEA's support team.",
+        projectDescription: "The main purpose of the application is to provide an easy-to-use interface for employers to submit technical support requests and receive assistance from ARVEA's support team.",
         tools: {
             tool1: "Figma"
         },

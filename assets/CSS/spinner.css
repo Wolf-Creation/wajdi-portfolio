@@ -93,3 +93,10 @@
         transform: rotate(-315deg);
     }
 }
+
+@media screen and (max-width:600px){
+    .configure-border-1, .configure-border-2{
+        top: 43%;
+        left: 35%;
+    }
+}

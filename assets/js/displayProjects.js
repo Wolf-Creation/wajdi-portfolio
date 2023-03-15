@@ -234,7 +234,7 @@ categories.forEach(category => {
 //read automatically video preview
 function playVideo() {
     var playIcon = document.querySelectorAll('.play-icon')
-    if (window.innerWidth > 697) {
+    if (window.innerWidth > 697 && selectedCategory != 'Private') {
         for (let index = 0; index < video.length; index++) {
             video[index].addEventListener("mouseover", function () {
                 video[index].play();
