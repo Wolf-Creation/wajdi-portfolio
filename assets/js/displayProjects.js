@@ -174,7 +174,7 @@ categories.forEach(category => {
 
         // show the projects based on the selected category
         selectedCategory = this.dataset.category;
-        if (selectedCategory != 'all') {
+        if (selectedCategory != 'all' && selectedCategory != 'Private') {
             project_table.forEach(project => {
                 if (project.category === selectedCategory) {
                     cat_projects.push(project)
@@ -202,6 +202,22 @@ categories.forEach(category => {
                     document.querySelector('.play-icon').style.display = "block"
                 });
             }
+        } else if (selectedCategory == 'Private') {
+            function showItemsWithPassword() {
+                const password = prompt("Enter password:");
+
+                if (password === "2023") {
+                    let totalPages = Math.ceil(private_table.length / projectPerPage)
+                    let currentPage = 1
+                    displayProjects(private_table)
+                    createPagination(totalPages, private_table)
+                    updatePaginationButtons(totalPages)
+                    setActive(currentPage)
+                } else {
+                    alert("Incorrect password");
+                }
+            }
+            showItemsWithPassword()
         }
 
         else {
@@ -255,3 +271,13 @@ function autoPlayMobileVideo() {
     }
 }
 
+function showItemsWithPassword() {
+    const password = prompt("Enter password:");
+
+    if (password === "2023") {
+        // Replace this with the code that shows the items
+        console.log("Items are displayed");
+    } else {
+        alert("Incorrect password");
+    }
+}

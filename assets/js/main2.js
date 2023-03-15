@@ -1,4 +1,5 @@
 window.onload = () => {
+    SpinnerLoad()
     displayProjects(project_table)
     setActive(1)
     if (window.innerWidth < 1080) {
@@ -10,7 +11,6 @@ window.onload = () => {
             autoPlayMobileVideo();
         }
     });
-
 }
 
 window.onresize = function () {
