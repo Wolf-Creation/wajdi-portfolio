@@ -172,7 +172,7 @@ var private_table = [
         video: "",
         image: "/assets/img/projects/Dr_Hichem_Jarraya_cover.jpg",
         category: "Private",
-        link: "https://www.behance.net/gallery/134733729/Dengry-619"
+        link: "https://drive.google.com/drive/folders/1VsA7lPQsoI-b7uI1subqBkWpsjBxI3ie?usp=share_link"
     },
     {
         projectName: "Fritti",
@@ -183,7 +183,7 @@ var private_table = [
         video: "",
         image: "/assets/img/projects/fritti_cover.jpg",
         category: "Private",
-        link: "https://www.behance.net/gallery/134733729/Dengry-619"
+        link: "https://drive.google.com/drive/folders/15CHqq9_StVZ1LvJ8iNTJjtBBUr5RGVKr?usp=share_link"
     },
     {
         projectName: "Helpdesk",
@@ -194,7 +194,7 @@ var private_table = [
         video: "",
         image: "/assets/img/projects/HelpDesk_cover.jpg",
         category: "Private",
-        link: "https://www.behance.net/gallery/134733729/Dengry-619"
+        link: "https://drive.google.com/drive/folders/1DvdXKyYX0C0FOVDPFlYFeoytHL-7ZKuY?usp=share_link"
     },
     {
         projectName: "The Sindbad",
@@ -205,7 +205,7 @@ var private_table = [
         video: "",
         image: "/assets/img/projects/Sindbad_cover.jpg",
         category: "Private",
-        link: "https://www.behance.net/gallery/134733729/Dengry-619"
+        link: "https://drive.google.com/drive/folders/1FLemYlmVgu6L-aV1IkQYGI91PqjZljnw?usp=share_link"
     },
     {
         projectName: "Barber Shop",
@@ -216,7 +216,7 @@ var private_table = [
         video: "",
         image: "/assets/img/projects/barbar_shop_cover.jpg",
         category: "Private",
-        link: "https://www.behance.net/gallery/134733729/Dengry-619"
+        link: "https://drive.google.com/drive/folders/1s4p5F1Fw--icYEfHLhYbMY8HxkHLNDT4?usp=share_link"
     },
     {
         projectName: "Klinica",
@@ -227,6 +227,6 @@ var private_table = [
         video: "",
         image: "/assets/img/projects/Klinica_cover.jpg",
         category: "Private",
-        link: "https://www.behance.net/gallery/134733729/Dengry-619"
+        link: "https://drive.google.com/drive/folders/1iNXmw1n_UYs6deOUWy29So1-5PuMJrUp?usp=share_link"
     }
 ]
